@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <style type="text/css">
+        .banner { background-color: #E8E8E8;}
+        .logo, .bannerTitle {display: inline-block;}
+        .bannerTitle {
+            padding-bottom: 40px;
+            padding-left: 40px;
+            font-size: 3.5em;
+            font-weight: bold;
+            vertical-align: text-bottom;
+        }
+        .bannerContent {
+            padding-left: 80px;
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+        .settingsArea {
+            padding-left: 80px;
+            padding-top: 30px;
+        }
+        .settingsTitle {
+            font-size: 1.8em;
+            padding-bottom: 15px;
+        }
+        .choices {
+            font-size: 1.3em;
+        }
+        #status {
+            padding-top: 40px
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <div class="bannerContent">
+        <span class="logo">
+            <img src="assets/icon_128.png"/>
+        </span>
+        <span class="bannerTitle">
+           daclub 
+        </span>
+    </div>
+</div>
+<div class="settingsArea">
+    <div class="settingsTitle">
+        General Options
+    </div>
+    <div class="choices">
+        <div> username <input type="text" id="username"/> </div> 
+        <div> email <input type="text" id="email"/> </div>
+        <div> password <input type="text" id="pwd"/>      </div> 
+        <div> state 
+            <select name="state" id="state">      
+                <option value="register">Register</option>
+                <option value="codes">Codes</option>
+            </select>
+        </div> 
+        <div>
+            signedin
+            <select name="signedIn" id="signedIn">      
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+        <div> version <input type="text" id="version" value="0"/>  </div> 
+    </div>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html>
